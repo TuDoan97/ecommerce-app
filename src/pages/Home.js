@@ -4,10 +4,12 @@ import Marquee from "react-fast-marquee";
 import BlogCard from "../components/BlogCard";
 import ProductCart from "../components/ProductCart";
 import SpecialProduct from "../components/SpecialProduct";
+import Meta from "../components/Meta";
 
 const Home = () => {
   return (
     <>
+      <Meta title={"Home"} />
       <section className="home-wrapper-1 py-5">
         <div className="container-xxl">
           <div className="row">
@@ -311,12 +313,10 @@ const Home = () => {
                 <h3 className="section-heading">Our Popular Products</h3>
               </div>
             </div>
-            <div className="row">
-              <ProductCart />
-              <ProductCart />
-              <ProductCart />
-              <ProductCart />
-            </div>
+            <ProductCart />
+            <ProductCart />
+            <ProductCart />
+            <ProductCart />
           </div>
         </div>
       </section>
@@ -360,7 +360,7 @@ const Home = () => {
 
       <section className="blog-wrapper py-5 home-wrapper-2">
         <div className="container-xxl">
-          <div className="row">
+          <div className="blog-wrapper row">
             <div className="row">
               <div className="col-12 d-flex align-items-center justify-content-between">
                 <h3 className="section-heading">Our Latest Blogs</h3>
